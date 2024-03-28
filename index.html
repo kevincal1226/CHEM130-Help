@@ -13,10 +13,26 @@
     <div class="container">
         <h1>Choose what you want to learn</h1>
         <div class="button-container">
-            <button class="button" onclick="showWindow()">Elements</button>
-            <button class="button" onclick="showWindow()">Polyatomic Ions</button>
-            <button class="button" onclick="showWindow()">Molecular Geometries</button>
-            <button class="button">Electron Configurations Coming Soon...</button>
+            <button class="button" id="redirectButton">Elements</button>
+            <button class="button" id="redirectButton1">Polyatomic
+                Ions</button>
+            <button class=" button" id="redirectButton2">Molecular
+                Geometries</button>
+            <button class="button" id="redirectButton3">Electron Configurations Coming Soon...</button>
+            <script>
+                document.getElementById("redirectButton").addEventListener("click", function () {
+                    window.location.href = "https://kevincal1226.github.io/CHEM130-Elements-Help/";
+                });
+                document.getElementById("redirectButton1").addEventListener("click", function () {
+                    window.location.href = "https://kevincal1226.github.io/CHEM130-Polyatomic-Ions/";
+                });
+                document.getElementById("redirectButton2").addEventListener("click", function () {
+                    window.location.href = "https://kevincal1226.github.io/CHEM130-Molecular-Geometries/";
+                });
+                document.getElementById("redirectButton3").addEventListener("click", function () {
+                    window.location.href = "https://tryitands.ee";
+                });                
+            </script>
         </div>
     </div>
 </body>
