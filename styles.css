@@ -1,0 +1,73 @@
+:root {
+    --primary: #1890ff;
+    --primary-darker: #096dd9;
+    --off-white: #EFEFEF;
+    --off-white-lighter: #f2f2f2;
+    --grey: #464646;
+    --mid-grey: #383838;
+    --dark-grey: #262626;
+    --red: #cd2337;
+
+    --background-color: var(--off-white-lighter);
+    --primary-container: #fff;
+    --on-primary-container: #111111;
+    --input-background: var(--off-white);
+    --input-foreground: black;
+    color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: var(--grey);
+        --primary-container: var(--dark-grey);
+        --on-primary-container: var(--off-white);
+        --input-background: #666666;
+        --input-foreground: var(--off-white-lighter);
+        color-scheme: dark;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--off-white);
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 50px;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.button {
+    width: 45%;
+    height: 200px;
+    margin: 10px;
+    background-color: var(--primary);
+    color: var(--off-white);
+    font-size: 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: var(--primary-darker);
+}
